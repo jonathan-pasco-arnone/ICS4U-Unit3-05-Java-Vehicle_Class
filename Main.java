@@ -12,23 +12,6 @@
 final class Main {
 
     /**
-    * Constant as apose to magic number.
-    */
-    private static int FIVE = 5;
-    /**
-    * Constant as apose to magic number.
-    */
-    private static int SEVENTEEN = 17;
-    /**
-    * Constant as apose to magic number.
-    */
-    private static int THIRTY_TWO = 32;
-    /**
-    * Constant as apose to magic number.
-    */
-    private static int EIGHTY_SIX = 86;
-
-    /**
     * Prevent instantiation
     * Throw an exception IllegalStateException.
     * if this ever is called
@@ -49,6 +32,11 @@ final class Main {
     * @param args this will not be used
     */
     public static void main(final String[] args) {
+
+        final int FIVE = 5;
+        final int SEVENTEEN = 17;
+        final int THIRTY_TWO = 32;
+        final int EIGHTY_SIX = 86;
 
         // The first car
         final Vehicle car1 = new Vehicle("CASZ203", "Black", 4, 20);
@@ -78,7 +66,7 @@ final class Main {
         car1.accelerate(SEVENTEEN);
         System.out.println("\nCar1 has had their speed accelerated to "
             + car1.getSpeed());
-        
+
         System.out.println("\nCar1 is attempting to accelerate by 5");
         car1.accelerate(FIVE);
     }

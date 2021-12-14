@@ -141,7 +141,8 @@ public final class Vehicle {
     */
     public void accelerate(final int acceleration) {
         if (acceleration + speed > maxSpeed) {
-            System.out.println("\nCannot accelerate more than the maximum speed");
+            System.out.println("\nCannot accelerate more"
+                + " than the maximum speed");
         } else {
             speed = speed + acceleration;
         }
