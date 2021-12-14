@@ -33,10 +33,10 @@ final class Main {
     */
     public static void main(final String[] args) {
 
-        final int FIVE = 5;
-        final int SEVENTEEN = 17;
-        final int THIRTY_TWO = 32;
-        final int EIGHTY_SIX = 86;
+        final int five = 5;
+        final int seventeen = 17;
+        final int thirtyTwo = 32;
+        final int eightySix = 86;
 
         // The first car
         final Vehicle car1 = new Vehicle("CASZ203", "Black", 4, 20);
@@ -47,11 +47,11 @@ final class Main {
         System.out.println("\nThe max speed of the both the cars are "
             + car1.getMaxSpeed() + " and " + car2.getMaxSpeed());
 
-        car2.accelerate(EIGHTY_SIX);
+        car2.accelerate(eightySix);
         System.out.println("\nCar2 has had their speed accelerated to "
             + car2.getSpeed());
 
-        car2.brake(THIRTY_TWO);
+        car2.brake(thirtyTwo);
         System.out.println("\nCar2 hit the brake to make their speed "
             + car2.getSpeed());
 
@@ -63,11 +63,11 @@ final class Main {
         System.out.println("\nCar2 has changed the colourof their car to "
             + car2.getColour());
 
-        car1.accelerate(SEVENTEEN);
+        car1.accelerate(seventeen);
         System.out.println("\nCar1 has had their speed accelerated to "
             + car1.getSpeed());
 
         System.out.println("\nCar1 is attempting to accelerate by 5");
-        car1.accelerate(FIVE);
+        car1.accelerate(five);
     }
 }
